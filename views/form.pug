@@ -3,7 +3,17 @@ html
   head
     title My Form
   body
-    form(action='/ps4' method='get')
-      label(for='name') Name:
+    form(action='/ps4/postMethod' method='post')
+      label(for='name') Enter an ingredient: 
       input(type='text' id='name' name='name')
-      input(type='submit' value='Submit')
+      input(type='submit' value='Submit (POST)')
+      
+    form(action='/ps4/asyncMethod' method='post')
+      label(for='name2') Enter an ingredient: 
+      input(type='text' id='name2' name='name2')
+      input(type='submit' value='Submit (async/wait)')
+
+    form(action='/ps4/callbackMethod' method='post')
+      label(for='name3') Enter an ingredient: 
+      input(type='text' id='name3' name='name3')
+      input(type='submit' value='Submit (callback)')

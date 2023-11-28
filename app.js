@@ -1,6 +1,8 @@
-const express = require('express');
+import express from 'express';
+import ps4route from './routes/ps4.js';
+
+
 const app = express();
-const ps4route = require('./routes/ps4');
 
 app.set('view engine', 'pug');
 
